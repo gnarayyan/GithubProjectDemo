@@ -1,0 +1,48 @@
+name: Feature Request
+description: Request a new feature or enhancement.
+title: "[Feature]: "
+labels: ["feature", "enhancement"]
+projects: ["octo-org/2"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide as much detail as possible to help us understand the feature you want.
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Describe the feature or enhancement you would like to see.
+      placeholder: Tell us what the feature should do and why it’s important.
+    validations:
+      required: true
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: What are the potential use cases for this feature? How would this improve the app?
+      placeholder: Describe how this feature will be used.
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - High
+        - Medium
+        - Low
+      default: Low
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com).
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
